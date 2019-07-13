@@ -1,8 +1,15 @@
+#!/usr/bin/env python3
+
 import numpy as np
 import mpl_toolkits.mplot3d.axes3d as p3
 import matplotlib.pyplot as plt
 import colorsys
 from PIL import Image
+
+try:
+    xrange # Python2
+except:
+    xrange = range # Python3
 
 # (1) Import the file to be analyzed!
 img_file = Image.open("thedress.jpg")
