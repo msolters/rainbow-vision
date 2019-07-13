@@ -8,11 +8,13 @@ usage:
 """
 import sys
 
-import numpy as np
+#import numpy as np
 import mpl_toolkits.mplot3d.axes3d as p3
 import matplotlib.pyplot as plt
 import colorsys
 from PIL import Image
+
+__version__ = "0.2.0"
 
 try:
     xrange # Python2
