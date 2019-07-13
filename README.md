@@ -26,8 +26,8 @@ foo@bar:~$ feh thedress.analysis.png
 literature
 ----------
 
-    - [RGB Image Analysis with Python](http://marksolters.com/programming/2015/02/27/rgb-histograph.html) by Martin Solters.
-    - [The incredibly challenging task of sorting colours](https://www.alanzucconi.com/2015/09/30/colour-sorting/)
+- [RGB Image Analysis with Python](http://marksolters.com/programming/2015/02/27/rgb-histograph.html) by Martin Solters.
+- [The incredibly challenging task of sorting colours](https://www.alanzucconi.com/2015/09/30/colour-sorting/)
 
 
 changelog
@@ -35,6 +35,6 @@ changelog
 
 **0.2.0**
 
-    - fixes: does not work with Python3
-    - adds arguments-support: me.py <image_in> [<image_out>]
-    - adds doc
+- fixes: does not work with Python3
+- adds arguments-support: me.py <image_in> [<image_out>]
+- adds doc
