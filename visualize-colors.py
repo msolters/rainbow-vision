@@ -1,11 +1,32 @@
-import numpy as np
+#!/usr/bin/env python3
+"""
+RGB Image Analysis with Python
+
+usage:
+    me.py <image_in> 
+    me.py <image_in> <image_analysis_out>
+"""
+import sys
+
+#import numpy as np
 import mpl_toolkits.mplot3d.axes3d as p3
 import matplotlib.pyplot as plt
 import colorsys
 from PIL import Image
 
+__version__ = "0.2.0"
+
+try:
+    xrange # Python2
+except:
+    xrange = range # Python3
+
 # (1) Import the file to be analyzed!
-img_file = Image.open("thedress.jpg")
+if len(sys.argv) < 2:
+    img_file = Image.open("thedress.jpg")
+else:
+    img_file = Image.open(sys.argv[1])
+
 img = img_file.load()
 
 # (2) Construct a blank matrix representing the pixels in the image
@@ -57,4 +78,8 @@ ax.set_xlabel('Hue')
 ax.set_ylabel('Value')
 ax.set_zlabel('Intensity')
 fig.add_axes(ax)
-plt.show()
+if len(sys.argv) < 3:
+    plt.show()
+else:
+    plt.savefig(sys.argv[2])
+
